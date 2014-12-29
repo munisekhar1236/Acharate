@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mainBg"
+        style="@style/nav_drawer_linearLayout_style"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="@dimen/nav_image_dimen"
+            android:layout_height="@dimen/nav_image_dimen"
+            android:src="@drawable/sub_home" />
+
+        <TextView
+            android:id="@+id/itemTv"
+            style="@style/nav_drawer_textView_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="Home" />
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="@dimen/nav_image_dimen"
+            android:layout_height="@dimen/nav_image_dimen"
+            android:paddingRight="10dp"
+            android:src="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/devider_height"
+        android:background="@color/divider" />
+
+</LinearLayout>

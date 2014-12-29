@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/product_item_width"
+    android:layout_height="@dimen/product_item_height"
+    android:background="@drawable/product_item_border"
+    android:padding="2dp"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:layout_weight="1.5" >
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="@dimen/product_image_width"
+            android:layout_height="@dimen/product_image_height"
+            android:layout_gravity="center"
+            android:background="@drawable/apple_image" />
+
+        <FrameLayout
+            android:layout_width="@dimen/product_offer_price_width"
+            android:layout_height="@dimen/product_offer_price_height"
+            android:background="@drawable/offer_bg" >
+
+            <TextView
+                android:id="@+id/offerPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="30% \n OFF"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <CheckBox
+            android:id="@+id/saveProdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:button="@drawable/cb_style"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B22222" />
+
+    <TextView
+        android:id="@+id/productName"
+        style="@style/productStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:text="Apple"
+        android:singleLine="true"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B22222" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/productStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="MRP"
+                 />
+
+            <TextView
+                android:id="@+id/mrpPrice"
+                style="@style/productStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15.00"
+                 />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#B22222" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/productStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ARCP"
+                 />
+
+            <TextView
+                android:id="@+id/arpPrice"
+                style="@style/productStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15.00"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
