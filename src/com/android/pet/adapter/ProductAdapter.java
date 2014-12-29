@@ -22,7 +22,7 @@ public class ProductAdapter extends ArrayAdapter<Product> {
 	private Context context;
 
 	private android.view.View.OnClickListener onClickListener;
-
+ 
 	public ProductAdapter(List<Product> personList, Context ctx,
 			OnClickListener onClickListener) {
 		super(ctx, R.layout.product_item, personList);
