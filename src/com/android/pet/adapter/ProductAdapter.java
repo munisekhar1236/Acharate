@@ -20,7 +20,7 @@ public class ProductAdapter extends ArrayAdapter<Product> {
 
 	private List<Product> productList;
 	private Context context;
-
+ 
 	private android.view.View.OnClickListener onClickListener;
  
 	public ProductAdapter(List<Product> personList, Context ctx,
